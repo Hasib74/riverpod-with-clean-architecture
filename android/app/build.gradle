@@ -51,6 +51,20 @@ android {
         versionName flutterVersionName
     }
 
+    flavorDimensions "flavor-type"
+    productFlavors {
+        development {
+            dimension "flavor-type"
+            manifestPlaceholders = [appName: "Dev Riverpod"]
+        }
+        production {
+            dimension "flavor-type"
+            manifestPlaceholders = [appName: "Riverpod"]
+        }
+    }
+
+
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
