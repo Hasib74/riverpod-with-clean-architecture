@@ -4,6 +4,7 @@ import 'package:flutter_flavor/flutter_flavor.dart';
 void main() {
   FlavorConfig(name: "production", variables: {
     "app_name" : "prod",
+    "base_url" : "",
   });
   runApp(const MyApp());
 }
