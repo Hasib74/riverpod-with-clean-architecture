@@ -28,7 +28,10 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+
   flutter:
+    sdk: flutter
+  flutter_localizations:
     sdk: flutter
 
   flutter_flavor: ^3.1.3
@@ -38,6 +41,30 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
+  #Routing
+  go_router:
+  # State Management
+  riverpod:
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+  hooks_riverpod:
+  # Remote
+  dio:
+  # Connection
+  internet_connection_checker_plus:
+  # Functional Programming
+  fpdart:
+  # Localization
+  intl:
+  # Equatable
+  equatable:
+  #Local db
+  shared_preferences:
+  # Space
+  gap:
+
+
+
 
 dev_dependencies:
   flutter_test:
@@ -49,6 +76,10 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
+  riverpod_generator: ^2.4.0
+  build_runner: ^2.4.9
+  custom_lint: ^0.6.4
+  riverpod_lint: ^2.3.10
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -59,6 +90,7 @@ flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
+  generate: true
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
